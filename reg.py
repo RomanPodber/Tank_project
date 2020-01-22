@@ -914,13 +914,16 @@ while running:
                     shoot = True
                     if tank_up:
                         Bullet_up(player.rect.x, player.rect.y)
+                        bulletts += 1
                     elif tank_down:
                         Bullet_down(player.rect.x, player.rect.y)
+                        bulletts += 1
                     elif tank_right:
                         Bullet_right(player.rect.x, player.rect.y)
+                        bulletts += 1
                     elif tank_left:
                         Bullet_left(player.rect.x, player.rect.y)
-                    bulletts += 1
+                        bulletts += 1
 
         if event.type == pygame.KEYUP:
             move = False
